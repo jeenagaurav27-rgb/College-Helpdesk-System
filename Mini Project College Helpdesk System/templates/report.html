@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Report an Issue - Campus Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎓 Campus Connect</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/track">Track Complaint</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h2>Report a Campus Issue</h2>
+
+        <p>Fill in the details below to report your problem.</p>
+
+        <form action="/report" method="POST">
+
+            <label>Name:</label><br>
+            <input type="text" name="name" placeholder="Enter your name" autocomplete="off">
+            <br><br>
+
+            <label>Roll Number:</label><br>
+            <input type="text" name="roll" placeholder="Enter your roll number" autocomplete="off">
+            <br><br>
+
+            <label>Category:</label><br>
+
+            <select name="category">
+                <option>Classroom🎓</option>
+                <option>Wi-Fi📶</option>
+                <option>Electricity⚡</option>
+                <option>Water🚰</option>
+                <option>Library📚</option>
+                <option>Cleanliness🧹</option>
+                <option>Other📌</option>
+            </select>
+
+            <br><br>
+
+            <label>Location:</label><br>
+            <input type="text" name="location" placeholder="Where is the problem?" autocomplete="off">
+            <br><br>
+
+            <label>Describe the problem:</label><br>
+
+            <textarea name="description" placeholder="Explain your problem" autocomplete="off"></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit Complaint</button>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Campus Connect | College Helpdesk System</p>
+    </footer>
+
+</body>
+
+</html>

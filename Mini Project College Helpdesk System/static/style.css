@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+main > h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+main > p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section > div {
+    display: inline-block;
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section > div:hover {
+    transform: translateY(-5px);
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+}
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Below is the Texture for Admin_login.html */
+main form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    text-align: left;
+}
+
+main form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+}
+
+main form button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

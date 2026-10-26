@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Helpdesk System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>🎓 Campus Connect</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/report">Report an Issue</a>
+            <a href="/track">Track Complaint</a>
+            <a href="/admin/login">Admin Login</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <h2>Your Campus. Your Voice.</h2>
+
+        <p>
+            Have a problem on campus?
+            Report it and help us make our college better.
+        </p>
+        
+        <a href="/report">
+            <button>Report an Issue</button>
+        </a>
+
+        <!-- Complaint Categories -->
+        <section>
+
+            <h2>How Can We Help?</h2>
+
+            <div>
+                <h3>🏫 Classroom</h3>
+                <p>Report problems related to classrooms.</p>
+            </div>
+
+            <div>
+                <h3>📶 Wi-Fi</h3>
+                <p>Report internet or network problems.</p>
+            </div>
+
+            <div>
+                <h3>💡 Electricity</h3>
+                <p>Report electrical problems on campus.</p>
+            </div>
+
+            <div>
+                <h3>🚰 Water</h3>
+                <p>Report water supply or leakage problems.</p>
+            </div>
+
+            <div>
+                <h3>📚 Library</h3>
+                <p>Report problems related to the library.</p>
+            </div>
+
+            <div>
+                <h3>🧹 Cleanliness</h3>
+                <p>Report cleanliness and sanitation problems.</p>
+            </div>
+
+            <div>
+                <h3>📌 Other</h3>
+                <p>Report any other campus-related problem.</p>
+            </div>
+
+        </section>
+
+
+    <!-- Track Complaint -->
+<section>
+
+    <h2>Track Your Complaint</h2>
+
+    <p>Enter your complaint ID to check its status.</p>
+
+    <form action="/track" method="POST">
+
+        <input 
+            type="text" 
+            name="complaint_id" 
+            placeholder="Enter Complaint ID"
+            required
+        >
+
+        <button type="submit">Track Complaint</button>
+
+    </form>
+
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Campus Connect | College Helpdesk System</p>
+    </footer>
+
+</body>
+
+</html>

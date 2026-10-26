@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Login - Campus Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎓 Campus Connect</h1>
+
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Admin Login</h2>
+
+        <p>Login to manage campus complaints.</p>
+
+        <form action="/admin/login" method="POST">
+
+            <label>Username:</label><br>
+            <input type="text" name="username" placeholder="Enter username" autocomplete="off">
+            <br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="Enter password" autocomplete="off">
+            <br><br>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Connect | College Helpdesk System</p>
+    </footer>
+
+</body>
+
+</html>
